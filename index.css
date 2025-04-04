@@ -1,0 +1,270 @@
+/* General Styles */
+body {
+    background-color: #0a0a0a; /* Deep black background */
+    color: #00bcd4; /* Cyan blue text */
+    font-family: 'Courier New', monospace;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background: rgba(0, 188, 212, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 2.5em;
+    text-shadow: 0px 0px 10px rgba(0, 188, 212, 0.8);
+}
+
+nav {
+    position: relative; /* Change from absolute to relative */
+    top: 0;
+    width: 100%;
+    background-color: #001a1a; /* Add a background color to separate it visually */
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Optional: Add a shadow for better separation */
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+nav a {
+    text-decoration: none;
+    color: cyan;
+    font-size: 1.2rem;
+    padding: 10px;
+    transition: 0.3s;
+    }
+    nav a:hover {
+        text-shadow: 0 0 10px cyan;
+    }
+/* About Section */
+#about {
+    margin: 40px auto;
+    height: 290px; /* Adjust height as needed */
+    overflow: auto; /* Allows scrolling if content overflows */
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 187, 212, 0.92);
+    width: 80%;
+}
+
+/* Profile Picture */
+#about img {
+    width: 200px; /* Adjust size */
+    height: 200px; /* Keep aspect ratio */
+    display: block;
+    margin: 10px 0; /* Removes auto-centering */
+    float: left; /* Anchors the image to the left */
+    box-shadow: 0px 0px 15px rgba(0, 188, 212, 0.6); /* Adds a glow effect */
+    border: 3px solid #03a9f4; /* Adds a blue border */
+}
+
+/* Sections */
+section {
+    margin: 40px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 188, 212, 0.3);
+    width: 80%;
+}
+
+/* Lists */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 1.2em;
+    padding: 5px;
+}
+
+/* Contact Section */
+#contact p {
+    font-size: 1.2em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+.skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.skill-box {
+    background: linear-gradient(135deg, #00bcd4, #0288d1);
+    color: white;
+    padding: 15px 25px;
+    border-radius: 8px;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 188, 212, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.skill-box:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 5px 20px rgba(0, 188, 212, 0.6);
+}
+:root {
+    --portfolio-secondary: #0288d1; /* Define the variable with a color value */
+}
+
+.experience-link {
+    display: inline-flex;
+    align-items: center;
+    font-weight: 500;
+    color: var(--portfolio-secondary);
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .experience-link:hover {
+    text-decoration: underline;
+  }
+  
+  .arrow-icon {
+    margin-left: 0.25rem; /* Equivalent to Tailwind's ml-1 */
+    width: 1rem; /* Tailwind's w-4 */
+    height: 1rem; /* Tailwind's h-4 */
+  }
+  .download-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.5rem 1rem; /* px-4 py-2 */
+    border-radius: 0.5rem; /* rounded-lg */
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05); /* shadow-subtle */
+    background-color: #1f2937; /* bg-gray-800 */
+    color: #ffffff;
+    border: 1px solid #374151; /* border-gray-700 */
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  .download-btn:hover {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow-md */
+    transform: translateY(-2px); /* hover:-translate-y-0.5 */
+  }
+  
+  .download-icon {
+    margin-right: 0.5rem; /* mr-2 */
+    width: 1rem; /* w-4 */
+    height: 1rem; /* h-4 */
+  }
+ /* Certification Section */
+#certification {
+    padding: 2rem;
+    background-color: #013C40; /* Dark teal */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff; /* White text */
+    max-width: 900px;
+    margin: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Section Title */
+  #certification h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #00eaff; /* Bright cyan */
+    text-shadow: 0 0 10px #00eaff, 0 0 20px #00eaff;
+    border-bottom: 3px solid #00eaff;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+  }
+  
+  /* Certificate Cards */
+  .certificate {
+    background-color: rgba(0, 0, 0, 0.4); /* Transparent dark overlay */
+    border-left: 6px solid #00eaff; /* Glowing cyan border */
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    margin-bottom: 2rem;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .certificate:hover {
+    transform: translateY(-6px);
+    background-color: #025c63; /* Slightly brighter teal */
+  }
+  
+  /* Text Styling */
+  .certificate p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #ffffff; /* White text */
+    margin-bottom: 1rem;
+  }
+  
+  .certificate ul {
+    margin-left: 1.5rem;
+    color: #d1f7ff;
+  }
+  
+  .certificate ul li {
+    margin-bottom: 0.5rem;
+    font-weight: 400;
+  }
+  
+  /* Certificate Images */
+  .cert-img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: 1rem auto 0 auto; /* Centers the image */
+    border-radius: 6px;
+    border: 2px solid #00eaff; /* Glowing cyan border */
+    box-shadow: 0 2px 10px #00eaff;
+    transition: transform 0.3s, border-color 0.3s;
+  }
+  
+  .cert-img:hover {
+    transform: scale(1.05);
+    border-color: #00eaff;
+    box-shadow: 0 0 15px #00eaff;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    #certification {
+      padding: 1.5rem;
+    }
+  
+    .certificate {
+      padding: 1rem;
+    }
+  
+    .cert-img {
+      max-width: 250px;
+    }
+  }
+  
+  
+  
+  
+  
+  
+    

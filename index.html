@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: white;
+        }
+        header {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: linear-gradient(to bottom, #001a1a, #003d3d);
+            animation: glowingBg 5s infinite alternate;
+        }
+        @keyframes glowingBg {
+            0% { background: #001a1a; }
+            100% { background: #003d3d; }
+        }
+        header h1 {
+            font-size: 4rem;
+            font-weight: bold;
+            text-shadow: 0 0 20px cyan, 0 0 30px blue;
+        }
+        nav {
+            position: absolute;
+            top: 20px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        nav a {
+            text-decoration: none;
+            color: cyan;
+            font-size: 1.2rem;
+            padding: 10px;
+            transition: 0.3s;
+        }
+        nav a:hover {
+            text-shadow: 0 0 10px cyan;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#education">Education Background</a></li>
+            <li><a href="#certification">Certification</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Welcome to my Portfolio</h1>
+        <h1>I'm Wanjiku Kariuki, But you can call Ciku Karis</h1>
+    </header>
+    <section id="about">
+        <img src="images/Profile picture.jpg" alt="My Profile Picture" width="200" height="200">
+        <h2>About Me</h2>
+        <p>My journey is characterized by a relentless pursuit of excellence and a</p>
+        <p>steadfast dedication to making a meaningful impact.</p>
+        <p>Whether in the laboratory conducting research or in leadership roles,</p> 
+        <p>I am driven to advance the frontiers of knowledge and contribute to the betterment of society.</p>
+    </section>
+    <section id="education">
+        <h2>Education Background</h2>
+        <p>Currently pursuing a BSc. in Applied Bioengineering at JKUAT, I integrate biotech, genomics, and data science to solve real-world challenges. I’ve earned certifications in Tech Training and Leadership Development.</p>
+        <a href="#experience" class="experience-link">
+            Explore my experience
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="arrow-icon">
+              <path d="M5 12h14"></path>
+              <path d="m12 5 7 7-7 7"></path>
+            </svg>
+          </a>          
+          <a href="assets/Wanjiku Kariuki CV.docx" download class="download-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="download-icon">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" x2="12" y1="15" y2="3"></line>
+            </svg>
+            Download Resume
+          </a>
+          
+    </section>
+    <section id="certification">
+        <h2>Certification</h2>
+        <div class="certificate">
+          <p><strong>1.</strong> Certificate of membership in the Jomo Kenyatta University Biochemistry Society (JKUBS)</p>
+          <img src="images/Membership Certificate.jpg" alt="Membership Certificate" class="cert-img">
+        </div>
+      
+        <div class="certificate">
+          <p><strong>2.</strong> Certificate of achievement for undergoing a two-month training in the following modules:</p>
+          <ul>
+            <li>Introduction to Python Programming</li>
+            <li>Web design using JavaScript, CSS and HTML</li>
+            <li>Introduction to IoT fundamentals</li>
+            <li>Robotics for beginners</li>
+            <li>UI/UX and Design Thinking</li>
+          </ul>
+          <img src="images/Certificate of achievement.jpg" alt="Certificate of achievement" class="cert-img" width="300" height="200">
+        </div>
+      
+        <div class="certificate">
+          <p><strong>3.</strong> Certificate of participation in the Sustainable Entrepreneurship Workshop.</p>
+          <img src="images/Certificate of participation.jpg" alt="Certificate of participation" class="cert-img">
+        </div>
+      
+        <div class="certificate">
+          <p><strong>4.</strong> Certificate of participation in the JKUAT Tech Training and Leadership Development Program.</p>
+          <img src="images/Certificate in leadership Training.jpg" alt="Certificate of Participation" class="cert-img">
+        </div>
+      </section>
+      
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skill-box">HTML</div>
+            <div class="skill-box">CSS</div>
+            <div class="skill-box">JavaScript</div>
+            <div class="skill-box">Python</div>
+        </div>
+    </section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <p>Coming soon...</p>
+    </section>
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: c.wanjikukariuki@gmail.com</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/wanjiku-kariuki-3a0330262" target="_blank">Click here</a></p>
+    </section>
+</body>
+</html>
